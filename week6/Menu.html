@@ -1,0 +1,68 @@
+<!doctype html> <!-- Menu.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
+<title>휴게소 메뉴</title>
+<script>
+function team(obj) {
+var name_a = ["해물칼국수", "우거지뼈해장국", "돼지고기김치찌개", "황태해장국", "우렁된장찌개", "전주양반비빔밥", "새싹비빔밥", "고등어구이백만"];
+var name_b = ["초밥모둠", "김치우동", "유부우동", "튀김우동", "미소라멘", "소유라멘", "돈까스", "치즈돈까스", "고구마치즈돈까스", "돈가스우동"];
+var name_c = ["짜장면", "짬뽕", "짬짜면", "간짜장", "간짬뽕", "삼선짜장", "삼선짬뽕", "울면", "볶음밥", "짜장밥", "짬뽕밥", "탕수육", "깐풍기"];
+var name_d = ["떡볶이", "짜장떡볶이", "궁중떡볶이", "기본라면", "만두라면", "떡라면", "치즈라면", "기본김밥", "참치김밥", "치즈김밥", "어묵탕", "모둠튀김"];
+var name_e = ["등심스테이그", "까르보나라", "고르곤졸라"];
+var name_f = ["소떡소떡", "핫도그", "치즈핫도그", "만쥬", "닭꼬치", "문어핫바", "호두과자", "팥붕어빵", "슈크림붕어빵", "치킨바"];
+var name_g = ["에스프레소", "아메리카노", "비엔나커피", "아포가또", "캬라멜마끼아또", "카페모카", "화이트모카", "바닐라라떼", "카페라떼", "카푸치노"];
+var name_h = ["플레인요거트", "딸기요거트", "블루베리요거트", "키위요거트"];
+var name_i = ["오렌지주스", "자몽주스", "키위주스", "홍시주스", "수박주스(계절메뉴)", "체리에이드", "레몬에이드", "블루레몬에이드", "자몽에이드", "청포도에이드"];
+var name_j = ["☆교수님짱☆", "☆존경해요☆"];
+var target = document.getElementById("foodx");
+ if(obj.value == "a") var k = name_a;
+else if(obj.value == "b") var k = name_b;
+else if(obj.value == "c") var k = name_c;
+else if(obj.value == "d") var k = name_d;
+else if(obj.value == "e") var k = name_e;
+else if(obj.value == "f") var k = name_f;
+else if(obj.value == "g") var k = name_g;
+else if(obj.value == "h") var k = name_h;
+else if(obj.value == "i") var k = name_i;
+else if(obj.value == "j") var k = name_j;
+ 
+  target.options.length = 0;
+ 
+  for (x in k) {
+    var opt = document.createElement("option");
+    opt.value = k[x];
+    opt.innerHTML = k[x];
+    target.appendChild(opt);
+    }
+ }  
+ function nameif(frm){
+  document.getElementById("aa").innerHTML="선택하신 항목은 " + frm.value + "입니다." ;
+ }
+    </script>
+    
+</head>
+<body>
+<section>
+<fieldset>
+<legend>Menu</legend>
+<label for="type">종류</label>
+<select id="typex" name="type" onchange ="team(this)">
+<option value="a"selected>한식</option>
+<option value="b">일식</option>
+<option value="c">중식</option>
+<option value="d">분식</option>
+<option value="e">양식</option>
+<option value="f">간식</option>
+<option value="g">커피</option>
+<option value="h">요거트음료</option>
+<option value="i">주스_에이드</option>
+<option value="j">그 외</option></select>
+
+
+<label for="food">음식</label>
+<select id="foodx" name="food" onchange="nameif(this)"></select>
+</fieldset>
+<fieldset>
+  <legend>결과</legend>
+    <p id="aa"> </p>
+</fieldset>
+</section></body></html> 
