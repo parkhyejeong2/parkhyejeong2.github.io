@@ -1,0 +1,33 @@
+<!doctype html> <!-- PortfolioContest.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> 
+*{box-sizing:border-box; padding:0; margin:0; }  
+.row::after{content:""; clear:both; display:table;}
+.col-1{width:8.33%;} .col-2{width:16.66%;} .col-3{width:25%;} .col-4{width:33.33%;} 
+.col-5{width:41.66%;} .col-6{width:50%;} .col-7{width:58.33%;} .col-8{width:66.66%;} 
+.col-9{width:75%;} .col-10{width:83.33%;} .col-11{width:91.66%;} .col-12{width:100%;}
+[class*="col-"] {float:left; padding:10px;} .header, .footer{background-color:lightblue; color:black; padding:10px;}
+.menu ul, .banner ul{list-style-type:none;}
+.menu li{background-color:white; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+.menu li:hover{background-color:lightblue;}
+.banner li{border:2px solid black; padding :10px; margin-bottom,:10px; box-shadow:0 1px 3px gray;}
+.banner li img {width:10%; vertical-align:middle;} 
+@media only screen and(max-width:768px) { [class*="col-"] {width:100%; } }
+</style><title>PORTFOLIO</title></head>
+<body><header class="header"><h2>PORTFOLIO 2019</h2></header>
+<div class="row"></div>
+<div id="main">
+  <nav class="col-3 menu"> <!-- 메뉴 -->
+    <ul><li><a href="https://parkhyejeong2.github.io/PORTFOLIO/PortfolioMain.html">Main</a></li>
+          <li><a href="https://parkhyejeong2.github.io/PORTFOLIO/PortfolioSchedule.html">시간표</a></li>
+          <li><a href="https://parkhyejeong2.github.io/PORTFOLIO/PortfolioContest.html">공모전</a></li>
+          <li>봉사활동</li>
+          <li>워킹홀리데이</li></ul></nav>
+  <section class="col-6">
+    <h3>Contest</h3>
+    <img src="/PORTFOLIO/공모전.PNG"/></section>
+    <p></p>
+  <aside class="col-3 banner">
+  <ul><li><img src="/PORTFOLIO/하트.jpg">기타</li></ul></aside>
+</div><div class="row"></div>
+<footer class="footer"><h4>Made by ParkHyeJeong 2019.05.30</h4></footer></body></html>
