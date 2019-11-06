@@ -1,1 +1,14 @@
-dfd
+<!doctype html><!-- Ex7_9.html -->
+<html><head><meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title> Ex7_9</title>
+</head>
+<body>
+  <h2> Ex7_9 </h2><br/>
+  <p>소스코드</p><br/>
+  <img src="/java/week_10/Ex7_9.PNG" width=50% border=0 usemap="#area"><br/>
+  <img src="/java/week_10/Ex7_9_1.PNG" width=50% border=0 usemap="#area"><br/>
+  <img src="/java/week_10/Ex7_9_2.PNG" width=50% border=0 usemap="#area"><br/>
+  <p>결과창</p><br/>
+  <img src="/java/week_10/Ex7_9 결과.PNG" width=50% border=0 usemap="#area">
+</body></html>
